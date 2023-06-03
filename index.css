@@ -33,7 +33,7 @@
 
 #container{
     padding-top: 75px;
-    height: 1800px;
+    align-items: center;
 }
 
 header {
@@ -46,10 +46,11 @@ header {
     height: 75px;
     display: inline-flex;
     align-items: center;
-    border-bottom: 1px black solid;
+    border-bottom: 1.5px black solid;
     background-color: white;
     margin-left: auto;
     width: 100%;
+    opacity: 90%;
 }
 
 #logo img{
@@ -89,8 +90,9 @@ a {
 #navbar_togglebtn {
     display: none;
 }
+
 #entrance {
-    margin-top: 50px;
+    margin: 50px 30px;
     text-align: center;
     align-items: center;
 }
@@ -109,7 +111,9 @@ a {
 #entrance strong{
     display: inline-block;
     margin-top: 40px;
-    animation: opacity 6s;
+    font-size: 20px;
+    animation: opacity 4s;
+    max-width: 360px;
 }
 
 #entrance div{
@@ -122,31 +126,92 @@ a {
     display: inline-block;
     font-size: 30px;
     margin-top: 50px;
+    transform: scale(1);
+    transition: 0.5s transform;
 }
 
 #entrance div>span:hover {
-    transition: transform 1s;
+    transition: transform 0.5s;
     transform: scale(1.2);
 }
 
 #entrance div>dfn{
-    margin-top: 30px;
-    display: inline-block;
-    max-width: 1040px;
+    margin: 40px 50px;
+    margin-bottom: 0;
+    display: block;
+    max-width: 680px;
+    transform: scale(1);
+    transition: transform 0.5s;
+
 }
 
 #entrance div>dfn:hover{
-    transition: transform 1s;
-    transform: scale(0.9);
+    transition: transform 0.5s;
+    transform: scale(1.1);
 }
 
 #entrance p {
-    margin-top: 65px;
-    animation: opacity 10s;
+    height: 100px;
+    margin-top: 60px;
+    animation: opacity 8s;
     line-height: 1.6;
+    font-size: 17px;
 }
 
-@media screen and (max-width: 420px) {
+#Info {
+    border: 2px black solid;
+    margin-top: 50px;
+    height: 500px;
+    text-align: center;
+}
+
+#Info * {
+    border: 1px black solid;
+} 
+
+#Info h2{
+    height: 75px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+#Info div {
+    margin: 0 30px;
+    border-radius: 2%;
+    background-color: ivory;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+#Info img {
+    border-radius: 2%;
+    width:40%;
+}
+
+#Info ul {
+    align-items: center;
+    margin-left: 20px;
+}
+#Info li {
+    font-size: auto;
+    list-style: none;
+}
+
+#ReadMe {
+    border: 1px solid black;
+    height: 500px;
+}
+
+#Project {
+    border: 1px solid black;
+    height: 500px;
+}
+
+#etc {
+    border: 1px solid black;
+    height: 500px;
+}
+
+@media screen and (max-width: 460px) {
         #navbar{
             flex-direction: column;
             height: 76px;
@@ -157,7 +222,7 @@ a {
             height: 76px;
         }
         #logo img{
-            height: 75px;
+            height: 74px;
         }
         #navbar_menu {
             display: none;
