@@ -165,44 +165,68 @@ a {
     text-align: center;
 }
 
-#Info * {
-    border: 1px black solid;
-} 
-
 #Info h2{
     border-top: 2px solid;
     border-bottom: 2px solid;
     height: 75px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     font-size: 40px;
 }
 
 #Info .Card {
+    border: 1px black solid;
     border-radius: 5%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     background-color: whitesmoke;
-    position: relative;
-    
 }
 
 #Info .Card img {
-    border-radius: 50%;
+    border: 1px black solid;
+    border-radius: 30%;
     width: 50%;
 }
 
 #Info .Card .CardBox{
     width: 100%;
+    margin-left: 3vw;
 }
+
 #Info .Card h4 {
     position:relative;
     text-align: center;
-    margin: 20px 0;
+    margin: 2vw 0;
+    font-size: 3vw;
+
 }
 #Info .Card p {
-    line-height: 1.4;
+    font-size: 2.5vw;
+    line-height: 1.8;
+    text-align: center;
+    align-items: center;
+    margin-top: 3vh;
 }
+#Info .CardBox div {
+    margin-top: 1vh;
+    display: flex;
+    font-size: 2.5vw;
+}
+
+#Info .CardBox span{
+    font-size: 3vw;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+#Info .CardBox a{
+    display: flex;
+    align-items: center;
+}
+#Info .CardBox img{
+    border-radius: 50%;
+    width: 25%;
+}
+
 #ReadMe {
     border: 2px black solid;
     margin-top: 50px;
