@@ -178,8 +178,15 @@ a {
     width: 80%;
     margin: 0 auto;
     display: flex;
+}
+
+#Info .a{
     background-color: whitesmoke;
 }
+#Info .b {
+    background-color: floralwhite;
+}
+
 
 #Info .Card img {
     border: 1px black solid;
