@@ -174,9 +174,9 @@ a {
 
 #Info .Card {
     border: 1px black solid;
-    border-radius: 5%;
-    width: 80%;
-    margin: 0 auto;
+    border-radius: 2.5%;
+    width: 70%;
+    margin: 0 20px;
     display: flex;
 }
 
@@ -213,6 +213,10 @@ a {
     align-items: center;
     margin-top: 3vh;
 }
+#Info .CardBox .goal {
+    width: 90%;
+    margin: 0 auto;
+}
 #Info .CardBox div {
     margin-top: 1vh;
     display: flex;
@@ -234,30 +238,94 @@ a {
     width: 25%;
 }
 
-#ReadMe {
-    border: 2px black solid;
-    margin-top: 50px;
-    height: 700px;
-    text-align: center;
+.slide {
+    width: 80%;
+    overflow:hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.cards {
+    display: flex;
+    width: 400%;
+    transition: left 0.5s ease-out;
+    position: relative;
 }
 
-#ReadMe *{
-    border: 1px black solid;
+.cards .Card:not(:last-child) {
+    float: left;
 }
+.cards .Card {
+    float: left;
+}
+.controll i {
+    margin: 3vw 2vw;
+    font-size: 4vw;
+}
+
+.controll .prev:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+
+.controll .next:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+
+#ReadMe {
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.ReadMeBox {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    border-top: 1px solid;
+}
+
 #ReadMe h2 {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     height: 75px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 40px;
 }
 
 #ReadMe h4 {
-    font-size: 20px;
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
 }
+
 #ReadMe p{
     line-height: 1.6;
     width: 80%;
-    margin: 30px auto;
+    font-size: 2vw;
+    text-align: center;
+    display: inline-block;
 }
+
+#ReadMe>p{
+    font-size: 3vw;
+    margin-bottom: 15px;
+}
+
+.ReadMeBox>p{
+    margin: 0 0.7vw;
+}
+
+#ReadMe .c{
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+#ReadMe .d{
+    padding: 2vw 0;
+}
+
 #Project {
     border: 1px solid black;
     height: 700px;
