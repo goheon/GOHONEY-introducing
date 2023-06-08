@@ -280,7 +280,7 @@ a {
 
 .ReadMeBox {
     display: flex;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     border-top: 1px solid;
 }
@@ -301,7 +301,7 @@ a {
 #ReadMe p{
     line-height: 1.6;
     width: 80%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     display: inline-block;
 }
@@ -324,13 +324,26 @@ a {
 
 #ReadMe .d{
     padding: 2vw 0;
+    margin-bottom: 60px;
 }
 
 #Project {
-    border: 1px solid black;
     height: 700px;
+    text-align: center;
 }
 
+#Project h2 {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    height: 75px;
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+#Project h2:last-child{
+    display: inline-block;
+    margin: 200px auto;
+    line-height: 1.7 ;
+}
 #etc {
     border: 1px solid black;
     height: 700px;
